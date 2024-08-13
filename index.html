@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Pão e Amore</title>
+</head>
+<body>
+    <header>
+        <div class="images"><img src="pictures/QUENTINHO TODA HORA.jpg" alt=""><h4><b>PÃO E AMORE</b></h4></div>
+    </header>
+    <main>
+        <h2>PÃES COM RECHEIO SALGADO</h2>
+        <div class="produto">
+            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.06.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão Tradicional</b></h3>
+                <h5>Descrição</h5>
+                <h4>R$ 12,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="12" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão de Calabresa</b></h3>
+                <h5>Descrição</h5>
+                <h4>R$ 15,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="15" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto prods">
+            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04 (1).jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão de Tomate e Queijo</b></h3>
+                <h5>Descrição</h5>
+                <h4>R$ 14,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="14" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>PÃES COM RECHEIO DOCE</h2>
+        <div class="produto">
+            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04 (1).jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão de Goiabada</b></h3>
+                <h5>Descrição</h5>
+                <h4>R$ 15,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="15" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto prods">
+            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04 (1).jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão de Mumu</b></h3>
+                <h5>Descrição</h5>
+                <h4>R$ 16,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="16" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>TOTAL: R$ <span id="valor-total">0,00</span></p>
+            <button id="pedido-btn"><p>PEDIR</p></button>
+        </div>
+    </footer>
+
+    <!-- Modal de Cadastro -->
+    <div id="cadastro-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h1>Cadastro</h1>
+            <form id="cadastro-form">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+                <label for="data-nascimento">Data de Nascimento:</label><br>
+                <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <button class="btn-btn" type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast">Por favor, selecione pelo menos um produto.</div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
