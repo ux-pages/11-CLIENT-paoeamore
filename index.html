@@ -8,75 +8,199 @@
 </head>
 <body>
     <header>
-        <div class="images"><img src="pictures/QUENTINHO TODA HORA.jpg" alt=""><h4><b>PÃO E AMORE</b></h4></div>
+        <div class="images">
+            <img src="pictures/QUENTINHO TODA HORA.jpg" alt="">
+            <h4><b>PÃO E AMORE</b></h4>
+        </div>
     </header>
     <main>
-        <h2>PÃES COM RECHEIO SALGADO</h2>
+        <h2>PÃES</h2>
         <div class="produto">
-            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.06.jpeg" alt="" width="120px">
+            <img src="pictures/calabresa.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão de Calabresa</b></h3>
+                <h4>R$ 15,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="15" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-calabresa">Observações:</label>
+                <input type="text" id="obs-calabresa" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/goaia.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pão de Queijo e Goiabada</b></h3>
+                <h4>R$ 15,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="15" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-queijo-goiabada">Observações:</label>
+                <input type="text" id="obs-queijo-goiabada" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/tradicional.jpeg" alt="" width="120px">
             <div class="desc">
                 <h3><b>Pão Tradicional</b></h3>
-                <h5>Descrição</h5>
                 <h4>R$ 12,00</h4>
                 <div class="quantity-wrapper">
                     <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
                     <input type="number" class="quantity-input" data-price="12" value="0" min="0">
                     <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
                 </div>
+                <label for="obs-tradicional">Observações:</label>
+                <input type="text" id="obs-tradicional" class="obs-input" placeholder="Adicione uma observação">
             </div>
         </div>
         <div class="produto">
-            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04.jpeg" alt="" width="120px">
+            <img src="pictures/mumu.jpeg" alt="" width="120px">
             <div class="desc">
-                <h3><b>Pão de Calabresa</b></h3>
-                <h5>Descrição</h5>
-                <h4>R$ 15,00</h4>
-                <div class="quantity-wrapper">
-                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
-                    <input type="number" class="quantity-input" data-price="15" value="0" min="0">
-                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
-                </div>
-            </div>
-        </div>
-        <div class="produto prods">
-            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04 (1).jpeg" alt="" width="120px">
-            <div class="desc">
-                <h3><b>Pão de Tomate e Queijo</b></h3>
-                <h5>Descrição</h5>
-                <h4>R$ 14,00</h4>
-                <div class="quantity-wrapper">
-                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
-                    <input type="number" class="quantity-input" data-price="14" value="0" min="0">
-                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
-                </div>
-            </div>
-        </div>
-
-        <h2>PÃES COM RECHEIO DOCE</h2>
-        <div class="produto">
-            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04 (1).jpeg" alt="" width="120px">
-            <div class="desc">
-                <h3><b>Pão de Goiabada</b></h3>
-                <h5>Descrição</h5>
-                <h4>R$ 15,00</h4>
-                <div class="quantity-wrapper">
-                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
-                    <input type="number" class="quantity-input" data-price="15" value="0" min="0">
-                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
-                </div>
-            </div>
-        </div>
-        <div class="produto prods">
-            <img src="pictures/WhatsApp Image 2024-08-12 at 18.47.04 (1).jpeg" alt="" width="120px">
-            <div class="desc">
-                <h3><b>Pão de Mumu</b></h3>
-                <h5>Descrição</h5>
+                <h3><b>Pão com Mumu</b></h3>
                 <h4>R$ 16,00</h4>
                 <div class="quantity-wrapper">
                     <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
                     <input type="number" class="quantity-input" data-price="16" value="0" min="0">
                     <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
                 </div>
+                <label for="obs-mumu">Observações:</label>
+                <input type="text" id="obs-mumu" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+
+        <h2>PEDÁÇOS DE PIZZA</h2>
+        <div class="produto">
+            <img src="pictures/piizamilho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pedaço de Queijo, Tomate e Manjericão</b></h3>
+                <h4>R$ 8,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="8" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-queijo-tomate-manjerricao">Observações:</label>
+                <input type="text" id="obs-queijo-tomate-manjerricao" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/piizamilho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pedaço de Queijo, Tomate e Atum</b></h3>
+                <h4>R$ 8,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="8" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-queijo-tomate-atun">Observações:</label>
+                <input type="text" id="obs-queijo-tomate-atun" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/piizamilho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pedaço de Queijo, Frango e Milho</b></h3>
+                <h4>R$ 8,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="8" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-queijo-frango-milho">Observações:</label>
+                <input type="text" id="obs-queijo-frango-milho" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+
+        <h2>PIZZAS INTEIRAS</h2>
+        <div class="produto">
+            <img src="pictures/piizamilho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pizza de Queijo, Tomate e Manjericão</b></h3>
+                <h4>R$ 68,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="68" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-pizza-queijo-tomate-manjerricao">Observações:</label>
+                <input type="text" id="obs-pizza-queijo-tomate-manjerricao" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/piizamilho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pizza de Queijo, Tomate e Atum</b></h3>
+                <h4>R$ 68,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="68" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-pizza-queijo-tomate-atun">Observações:</label>
+                <input type="text" id="obs-pizza-queijo-tomate-atun" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/piizamilho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Pizza de Queijo, Frango e Milho</b></h3>
+                <h4>R$ 68,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="68" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-pizza-queijo-frango-milho">Observações:</label>
+                <input type="text" id="obs-pizza-queijo-frango-milho" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+
+        <h2> BOLOS DE POTE</h2>
+        <div class="produto">
+            <img src="pictures/chocolate.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Bolo de Chocolate 50% Cacau</b></h3>
+                <h4>R$ 8,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="8" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-chocolate-cacau">Observações:</label>
+                <input type="text" id="obs-chocolate-cacau" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/morango.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Bolo de Chocolate e Morango</b></h3>
+                <h4>R$ 10,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="10" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-chocolate-morango">Observações:</label>
+                <input type="text" id="obs-chocolate-morango" class="obs-input" placeholder="Adicione uma observação">
+            </div>
+        </div>
+        <div class="produto">
+            <img src="pictures/bolo_leite_ninho.jpeg" alt="" width="120px">
+            <div class="desc">
+                <h3><b>Bolo de Leite Ninho e Branquinho de Ninho com Coco</b></h3>
+                <h4>R$ 10,00</h4>
+                <div class="quantity-wrapper">
+                    <button class="quantity-btn" onclick="changeQuantity(this, -1)">-</button>
+                    <input type="number" class="quantity-input" data-price="10" value="0" min="0">
+                    <button class="quantity-btn" onclick="changeQuantity(this, 1)">+</button>
+                </div>
+                <label for="obs-leite-ninho">Observações:</label>
+                <input type="text" id="obs-leite-ninho" class="obs-input" placeholder="Adicione uma observação">
             </div>
         </div>
     </main>

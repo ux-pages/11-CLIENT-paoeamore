@@ -44,8 +44,13 @@ function createWhatsAppLink(nome, telefone, dataNascimento, email) {
         const price = parseFloat(input.dataset.price);
         const quantity = parseInt(input.value);
         const productName = input.closest('.produto').querySelector('.desc h3').textContent.trim();
+        const observation = input.closest('.produto').querySelector('.obs-input').value.trim(); // Pegando observações
         if (quantity > 0) {
-            message += `${quantity} x ${productName} ${breadEmoji} - R$ ${(price * quantity).toFixed(2).replace('.', ',')}\n`;
+            message += `${quantity} x ${productName} ${breadEmoji} - R$ ${(price * quantity).toFixed(2).replace('.', ',')}`;
+            if (observation) {
+                message += ` (Obs: ${observation})`; // Adiciona observações se houver
+            }
+            message += `\n`;
             total += price * quantity;
         }
     });
@@ -53,7 +58,6 @@ function createWhatsAppLink(nome, telefone, dataNascimento, email) {
     message += `\nTotal: R$ ${total.toFixed(2).replace('.', ',')} ${moneyEmoji}\n\n${happyEmoji}${happyEmoji}`;
     return `https://wa.me/5551983198425?text=${encodeURIComponent(message)}`;
 }
-
 
 function showToast(message) {
     toast.textContent = message;
